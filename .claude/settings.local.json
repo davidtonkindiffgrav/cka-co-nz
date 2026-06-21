@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:www.cka.co.nz)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(mv \"I:\\\\Projects\\\\cka-co-nz\\\\images\\\\Memorial%20Wall%202a%20w.JPG\" \"I:\\\\Projects\\\\cka-co-nz\\\\images\\\\memorial-wall.jpg\")",
+      "Bash(mv \"I:\\\\Projects\\\\cka-co-nz\\\\images\\\\Training%20night%20ad.jpg\" \"I:\\\\Projects\\\\cka-co-nz\\\\images\\\\training-night-ad.jpg\")"
     ]
   }
 }
