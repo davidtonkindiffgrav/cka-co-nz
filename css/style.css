@@ -64,11 +64,16 @@ header .header-inner {
   z-index: 1;
 }
 
+/* h1 is hidden on pages that show the header image instead */
 header h1 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+header:has(.header-img) h1 {
+  display: none;
 }
 
 header .tagline {
@@ -336,6 +341,78 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: #a0ccf0;
+}
+
+/* --- Images ----------------------------------------------- */
+
+/* Header image replaces the CSS gradient title on home page */
+.header-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 6px;
+}
+
+/* Emblem floated beside intro paragraph */
+.intro-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.intro-block .emblem {
+  flex-shrink: 0;
+  max-width: 80px;
+  height: auto;
+  border: 1px solid #c0d0e8;
+  border-radius: 4px;
+  padding: 2px;
+  background: #fff;
+}
+
+.intro-block p {
+  margin-bottom: 0;
+}
+
+/* Full-width content image (training ad etc.) */
+.content-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 14px 0;
+  border-radius: 4px;
+  border: 1px solid #dde3ed;
+}
+
+/* Two-up photo row */
+.photo-row {
+  display: flex;
+  gap: 16px;
+  margin: 14px 0;
+  flex-wrap: wrap;
+}
+
+.photo-row figure {
+  flex: 1 1 200px;
+  margin: 0;
+}
+
+.photo-row figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #c0d0e8;
+  box-shadow: 0 2px 6px rgba(0,0,50,0.12);
+}
+
+.photo-row figcaption {
+  font-size: 12px;
+  color: #667;
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
 }
 
 /* --- Mobile Responsive ------------------------------------ */
